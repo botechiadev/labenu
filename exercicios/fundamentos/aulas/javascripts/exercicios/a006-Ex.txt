@@ -1,0 +1,10 @@
+## EXERCICIOS VARIAVEIS (A006)
+
+## REQUISITOS
+- item 1 - Atribuição de dados e typeof
+- item 2 - Guardar dados recebidos pelo prompt
+- item 3 - Lógica de atribuição
+
+item1 <- 6
+item2 <- value1, value2
+item3 <-bixo
