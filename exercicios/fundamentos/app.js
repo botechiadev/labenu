@@ -1,19 +1,18 @@
-
 const manager = [
     {
         id: "a006",
         mod: "M1",
         loteria: "006",
         titulo: "VARIAVEIS",
-        content: ["id", "loteria", "titulo", "content", "taskList"],
-        tasksList : [
-             {
+        content: ["id", "loteria", "titulo", "content", "tasksList"],
+        tasksList: [
+            {
                 id: "a006-fxX",
                 title: "fixacao",
                 quantidade: 3,
                 status: 1,
                 prefixo: "fx",
-                alias:"POKEMON",
+                alias: "POKEMON",
                 descricao: ""
             },
             {
@@ -22,7 +21,7 @@ const manager = [
                 quantidade: 3,
                 status: 1,
                 prefixo: "pg",
-                alias: "FROTA",
+                alias: "MINGAU",
                 descricao: ""
             },
             {
@@ -34,54 +33,54 @@ const manager = [
                 descricao: ""
             },
             {
-                id: "a006-pgX",
+                id: "a006-exX",
                 title: "exercicios",
                 quantidade: 3,
-                status:0,
+                status: 0,
                 alias: "CONWAY",
                 descricao: ""
             }
         ]
-    }
-    ,
+    },
+    ]
+    projectsList :[
     {
-        id: "M1F-P1-X",
+        ref: "M1F-P1-X",
         title: "PROJETOS FUNDAMENTOS WEB",
-        list: [   
-                {
-                    id: "M1F-P1-labeFOODs",
-                    title: "LABEFOODS",
-                    alias: "BANANINHA",
-                    responsable: "@BotechiaDev",
-                    status: 0,
-                    descricao: ""
-                }
-                ,
-                {
-                    id: "M1F-P2-labePETs",
-                    title: "LABEPETS",
-                    alias: "PET",
-                    responsable: "@BotechiaDev",
-                    status: 0,
-                    descricao: ""
-                },
-                {
-                    id: "M1F-P3-labeCOURSES",
-                    title: "LABECOURSES",
-                    alias: "",
-                    responsable: "@BotechiaDev",
-                    status: 0,
-                    descricao: ""
-                },
-                {
-                    id: "M1F-P4-labeMANAGER",
-                    title: "LABEMANAGER",
-                    alias: "LOJINHA",
-                    responsable: "@BotechiaDev",
-                    status: 0,
-                    descricao: ""
-                }
-            ]
+        list: [
+            {
+                id: "M1F-P1-labeFOODs",
+                title: "LABEFOODS",
+                alias: "BANANINHA",
+                responsable: "@BotechiaDev",
+                status: 0,
+                descricao: ""
+            },
+            {
+                id: "M1F-P2-labePETs",
+                title: "LABEPETS",
+                alias: "PET",
+                responsable: "@BotechiaDev",
+                status: 0,
+                descricao: ""
+            },
+            {
+                id: "M1F-P3-labeCOURSES",
+                title: "LABECOURSES",
+                alias: "",
+                responsable: "@BotechiaDev",
+                status: 0,
+                descricao: ""
+            },
+            {
+                id: "M1F-P4-labeMANAGER",
+                title: "LABEMANAGER",
+                alias: "LOJINHA",
+                responsable: "@BotechiaDev",
+                status: 0,
+                descricao: ""
+            }
+        ]
     },
     {
         id: "a001",
@@ -92,11 +91,7 @@ const manager = [
         nickname: "CONWAY-ERIKA-BOTECHIA",
         username: "@BOTECHIADEV",
         email: "botechiadev@gmail.com"
-        }
-]
+    }
+];
 
-const relatorio = (tarefas)=>{
-    console.log(tarefas)
-}
-
-relatorio(manager)
+console.log(relatorio)
