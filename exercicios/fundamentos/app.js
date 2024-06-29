@@ -1,4 +1,16 @@
-const manager = [
+const AUTHOR =   {
+    id: "a001",
+    title: "AUTHOR",
+    nome: "ERIKA BOTECHIA",
+    turma: "CONWAY",
+    empresa: "LABENU",
+    nickname: "CONWAY-ERIKA-BOTECHIA",
+    username: "@BOTECHIADEV",
+    email: "botechiadev@gmail.com"
+}
+
+
+const lsItems = [
     {
         id: "a006",
         mod: "M1",
@@ -13,7 +25,8 @@ const manager = [
                 status: 1,
                 prefixo: "fx",
                 alias: "POKEMON",
-                descricao: ""
+                descricao: "",
+                status: 1
             },
             {
                 id: "a006-pgX",
@@ -49,8 +62,8 @@ const manager = [
         title: "PROJETOS FUNDAMENTOS WEB",
         list: [
             {
-                id: "M1F-P1-labeFOODs",
-                title: "LABEFOODS",
+                id: "M1F-P1-labeFEIRA",
+                title: "LABEFEIRA",
                 alias: "BANANINHA",
                 responsable: "@BotechiaDev",
                 status: 0,
@@ -74,7 +87,7 @@ const manager = [
             },
             {
                 id: "M1F-P4-labeMANAGER",
-                title: "LABEMANAGER",
+                title: "COLABDEV",
                 alias: "LOJINHA",
                 responsable: "@BotechiaDev",
                 status: 0,
@@ -82,16 +95,7 @@ const manager = [
             }
         ]
     },
-    {
-        id: "a001",
-        title: "AUTHOR",
-        nome: "ERIKA BOTECHIA",
-        turma: "CONWAY",
-        empresa: "LABENU",
-        nickname: "CONWAY-ERIKA-BOTECHIA",
-        username: "@BOTECHIADEV",
-        email: "botechiadev@gmail.com"
-    }
-];
+]
 
-console.log(relatorio)
+
+console.log(lsItems)
