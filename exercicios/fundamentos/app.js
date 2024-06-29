@@ -1,4 +1,4 @@
-const manager = [
+const manager1 = [
     {
         id: "a006",
         mod: "M1",
@@ -67,7 +67,7 @@ const manager = [
             {
                 id: "M1F-P3-labeCOURSES",
                 title: "LABECOURSES",
-                alias: "",
+                alias: "GAMBIARRA",
                 responsable: "@BotechiaDev",
                 status: 0,
                 descricao: ""
@@ -94,4 +94,4 @@ const manager = [
     }
 ];
 
-console.log(relatorio)
+console.log(manager1)
