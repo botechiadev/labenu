@@ -28,8 +28,8 @@ console.log(typeof valorEx3, typeof valorEx2)
 valorEx1 = "qual seu nome"
 valorEx2 = "qual e sua idade"
 
-valorEx1 =askByPrompt(typeof valorEx1)
-valorEx2=askByPrompt(typeof Number(valorEx2))
+valorEx1 =ask2Prompt(typeof valorEx1)
+valorEx2=ask2Prompt(typeof Number(valorEx2))
 
 console.log("Olá", valorEx1, "você tem", valorEx2, "anos")
 

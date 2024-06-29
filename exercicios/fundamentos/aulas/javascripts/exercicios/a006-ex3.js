@@ -42,16 +42,16 @@ const p8="Cargo atual"
 const p9_b="Recebe comissão? Se sim, aperte em confirme, caso não, clique em cancel"
 const p10_n="Informe o ano de admissão"
 
-let r1=askByPrompt(p1)
-let r2=askByPrompt(p2)
-let r3=askByPrompt(p3)
-let r4=askByPrompt(p4)
-let r5=askByPrompt(p5)
+let r1=ask2Prompt(p1)
+let r2=ask2Prompt(p2)
+let r3=ask2Prompt(p3)
+let r4=ask2Prompt(p4)
+let r5=ask2Prompt(p5)
 
-let r7_n=askByPrompt(p7_n)
-let r8=askByPrompt(p8)
-let r9_b=askByPrompt(p9_b)
-let r10_n=askByPrompt(p10_n)
+let r7_n=ask2Prompt(p7_n)
+let r8=ask2Prompt(p8)
+let r9_b=ask2Prompt(p9_b)
+let r10_n=ask2Prompt(p10_n)
 
 console.log(`
     RELATORIO:

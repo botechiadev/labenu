@@ -13,11 +13,11 @@
 
 
 const likeBeer = "Voce Gosta de Cerveja?"
-const isBeerFanatic = askByPrompt(likeBeer)
+const isBeerFanatic = ask2Prompt(likeBeer)
 
 const likeBeach = "Voce Gosta de Praia?"
-const isBeachLover = askByPrompt(likeBeach)
+const isBeachLover = ask2Prompt(likeBeach)
 
 const askBrazilian = "Voce e Brasileiro?"
-const isBrazilian = askByPrompt(askBrazilian)
+const isBrazilian = ask2Prompt(askBrazilian)
 
