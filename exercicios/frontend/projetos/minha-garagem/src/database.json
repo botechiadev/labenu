@@ -1,0 +1,14 @@
+{
+    "tiposFR":[{
+        "id": "aXXX-XXX",
+        "titulo": "CONWAY",
+        "capacidade": 3,
+        "alias": "FROTA"
+        "listTypes": [ {
+            "conwayList": ["ex", "pg",  "ch"],
+            "labenuList": ["GARAGEM","LABETUBE", "LABEFY" , "LABEUSERS", "LABEX"],
+            "myList": ["POKEDEX", "LABECOMMERCE"]
+    }
+    ]
+}]
+}
