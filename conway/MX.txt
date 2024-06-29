@@ -1,2 +1,0 @@
-TITLE <= M+X
-X<=Number('Numero do modulo')
