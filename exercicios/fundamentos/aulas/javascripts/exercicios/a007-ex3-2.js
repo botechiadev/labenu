@@ -5,7 +5,8 @@ Na aula passada começamos a implementar um sistema para o RH de uma empresa.
 
 Vamos continuar? Suponhamos que o exercício da aula passada tenha como resultado o relatório abaixo:
 
-O funcionário Fulano de Silva, com CPF: 000.000.000-00, nasceu em 10/02/1990, reside em: Rua dos bobos nº 0 e possui 2 filhos. Possui habilitação? Sim. Ocupa o cargo de vendedor, recebe um salário de 2.000,00 reais, mais comissão de 10% sobre o total de vendas no mês e entrou na empresa em 2019.
+O funcionário Fulano de Silva, com CPF: 000.000.000-00, nasceu em 10/02/1990, reside em: Rua dos bobos nº 0 e possui 2 filhos. Possui habilitação? 
+Sim. Ocupa o cargo de vendedor, recebe um salário de 2.000,00 reais, mais comissão de 10% sobre o total de vendas no mês e entrou na empresa em 2019.
 
 Levando em consideração os dados abaixo, calcule o salário de Fulano da Silva (itens 1 a 5):
 
@@ -35,3 +36,67 @@ Imprima no console o cálculo do salário de todos os meses com acréscimos e de
 
 A média do salário em  seis meses (de janeiro a junho), levando em consideração as comissões e auxílio. (Dica: a média aritmética é calculada somando um grupo de números e dividindo pela quantidade de elementos somados. Por exemplo, a soma de 2, 3, 3, 5, 7 e 10 é 30 dividido por 6, dará média 5.)
 */
+const empregadoFulano = {
+    nome: 'Fulano de Silva',
+    cpf: '000.000.000-00',
+    dataNascimento: '10/02/1990',
+    endereco: 'Rua dos bobos nº 0',
+    auxilioCreche: 45.5,
+    filhos: 2,
+    habilitacao: true,
+    cargo: 'Vendedor',
+    salarioFixo: 2000,
+    vendas: [
+        { mes: 'Janeiro', valor: 5784.50 },
+        { mes: 'Fevereiro', valor: 3418.41 },
+        { mes: 'Março', valor: 4124.10 },
+        { mes: 'Abril', valor: 1874.00 },
+        { mes: 'Maio', valor: 7000 },
+        { mes: 'Junho', valor: 9450 }
+    ],
+    comissaoPercentual: 0.10,
+    inssDesconto: 0.05
+};
+
+const calcValorPercentSobreFixo = (percentual, fixo) => {
+    return fixo * percentual;
+};
+
+const somaKeyFromListaObj = (lista, keySomada) => {
+    const novaLista = []
+    lista.forEach((item) => {
+        novaLista.push(item[keySomada])
+    });
+    return novaLista.reduce((total, num) => total + num, 0);
+};
+
+const multiplicar = (a, b) => a * b;
+
+const { nome, cpf, endereco, auxilioCreche, filhos, habilitacao, cargo, salarioFixo, vendas, comissaoPercentual, inssDesconto } = empregadoFulano;
+
+// Auxílio creche total
+const valorBolsaFamilia = multiplicar(auxilioCreche, filhos);
+
+// Cálculo das comissões e descontos
+const salariosCompletos = vendas.map((venda) => {
+    const comissao = calcValorPercentSobreFixo(comissaoPercentual, venda.valor);
+    const salarioComComissao = salarioFixo + comissao + valorBolsaFamilia;
+    const descontoINSS = calcValorPercentSobreFixo(inssDesconto, salarioComComissao);
+    const salarioFinal = salarioComComissao - descontoINSS;
+    return {
+        mes: venda.mes,
+        salarioFinal,
+        comissao,
+        descontoINSS
+    };
+});
+
+// Imprime o salário de todos os meses com acréscimos e descontos
+salariosCompletos.forEach((salario) => {
+    console.log(`Mês: ${salario.mes}, Salário Final: R$ ${salario.salarioFinal.toFixed(2)}, Comissão: R$ ${salario.comissao.toFixed(2)}, Desconto INSS: R$ ${salario.descontoINSS.toFixed(2)}`);
+});
+
+// Cálculo da média salarial dos seis meses
+const mediaSalarial = salariosCompletos.reduce((total, salario) => total + salario.salarioFinal, 0) / salariosCompletos.length;
+
+console.log(`A média salarial de Fulano de Silva nos seis meses é: R$ ${mediaSalarial.toFixed(2)}`);

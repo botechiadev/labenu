@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>BRA.DEV</title>
+    <title>LABE COURSES</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   
     <header class="header">
-        <div class="container">
-        <h1>
-            BRA.DEV
-        </h1>
-        </div>
+
+            <h1 id="title">LABE COURSES</h1>
+         
+                <div class="container-nav-btn">       
+      
+                    <input type="text" id="searchCourses" placeholder="curso..."/>
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
     </header>      
     <div class="navigation">
-        <label for="check" id="nav">
-          <menu id="menu">   
+        <div class="container-nav">
+     
+          <nav id="menu">   
             <a href="#first">
                 <span><i class="fas fa-home"></i></span>
             </a>
@@ -34,12 +39,10 @@
             <a href="#fifth">
                 <span><i class="fas fa-home"></i></span>
             </a>
-          </menu>
-        </label>
-      
-        <span id="check-btn">
-            <input type="checkbox" id="check"/>
-        </span>
+</nav>
+    </div>
+   
+
     </div> 
         <main>
             <section id="first">
@@ -49,12 +52,20 @@
             </section>
             <section id="second">
                 <header>
-                <h2>ALUNOS</h2>
+                <h2>CURSOS</h2>
                 </header>
+                <article>
+                    <p style="color: blue">Temos cursos nas mais diversas
+                        áreas.</p>
+                </article>
             </section>
             <section id="third">
                 <header>
                 <h2>MATRICULA</h2>
+                <article>
+                    Venha conversar conosco e conhecer nossas ofertas
+                    de <strong>bolsas de estudos</strong>.
+                </article>
                 </header>
             </section>
             <section id="fourth">
@@ -78,7 +89,8 @@
     </main>
 </div>
     <footer>
-        <p>&copy; Todos os direitos reservados - BRA.DEV</p>
+        <p>&copy; Todos os direitos reservados - Labe CURSOS</p>
+      
     </footer>
       
 </body>

@@ -3,8 +3,8 @@ const AUTHOR =   {
     title: "AUTHOR",
     nome: "ERIKA BOTECHIA",
     turma: "CONWAY",
-    empresa: "LABENU",
-    nickname: "CONWAY-ERIKA-BOTECHIA",
+    empresa: "LABENU-CONWAY",
+    nickname: "ERIKA-BOTECHIA",
     username: "@BOTECHIADEV",
     email: "botechiadev@gmail.com"
 }
@@ -56,7 +56,7 @@ const lsItems = [
         ]
     },
     ]
-    projectsList :[
+    lsConwayProjects :[
     {
         ref: "M1F-P1-X",
         title: "PROJETOS FUNDAMENTOS WEB",
@@ -67,23 +67,32 @@ const lsItems = [
                 alias: "BANANINHA",
                 responsable: "@BotechiaDev",
                 status: 0,
-                descricao: ""
+                descricao: "",
+                imgURL: "",
+                github: "",
+                deploy: ""
             },
             {
-                id: "M1F-P2-labePETs",
-                title: "LABEPETS",
+                id: "M1F-P2-LABEPET",
+                title: "CHECKPET",
                 alias: "PET",
                 responsable: "@BotechiaDev",
                 status: 0,
-                descricao: ""
+                descricao: "",
+                imgURL: "",
+                github: "",
+                deploy: ""
             },
             {
-                id: "M1F-P3-labeCOURSES",
+                id: "M1F-P3-LABECOURSES",
                 title: "LABECOURSES",
                 alias: "",
                 responsable: "@BotechiaDev",
                 status: 0,
-                descricao: ""
+                descricao: "",
+                imgURL: "",
+                github: "",
+                deploy: ""
             },
             {
                 id: "M1F-P4-labeMANAGER",
@@ -91,7 +100,21 @@ const lsItems = [
                 alias: "LOJINHA",
                 responsable: "@BotechiaDev",
                 status: 0,
-                descricao: ""
+                descricao: "",
+                imgURL: "",
+                github: "",
+                deploy: ""
+            },
+            {
+                id: "M1F-PORTFOLIO-FUNDAMENTOS",
+                title: "PORTFOLIO-FUNDAMENTOS",
+                alias: "ARTISTA",
+                responsable: "@BotechiaDev",
+                status: 0,
+                descricao: "Projeto com os projetos refatorizado que foram propostos em seu momento pela turma CONWAY",
+                imgURL: "",
+                github: "",
+                deploy: ""
             }
         ]
     },

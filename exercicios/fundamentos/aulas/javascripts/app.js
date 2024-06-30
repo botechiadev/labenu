@@ -57,3 +57,11 @@ const isPar = ()=>{
         return pedePar % 2
     }
 }
+
+// a007-ex2
+const isMaior = (n1, n2)=>n1 > n2? (true):(false)
+const isIgual = (n1, n2)=>n1 === n2? (true):(false)
+const isDivisivel = (n1, n2)=> n1 % n2 ===0 ? (true):(false)
+
+//a007-tp1
+const rest = (num1, num2)=>num1-num2
