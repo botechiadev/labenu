@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    display: grid;
+    max-width: 1fr;
+    min-height: 100vh;
+    grid-auto-rows: 110px auto 60px;
+    background: #F5F5F5;
+}
+
+header{
+    max-height: 110px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    justify-content: space-around;
+}
+
+header>div:first-child{
+    background-color: black;
+    text-align: left;
+    color: whitesmoke;
+    width: 100%;
+    height: 50%;
+    margin-top: -16px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+header img{
+    width: 15px;
+    height: 15px;
+}
+
+.cardArticle{
+    width: 440px;
+    height: 230px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(236, 143, 5, 1);
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+.produto-img{
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    background-color: white;
+    overflow: hidden;
+}
+.produto-img img{
+    min-width: 179px;
+    min-height: 179px;
+    max-width: 180px;
+    max-height: 180px;
+    object-fit: contain;
+    object-position: top center;
+}
+
+
