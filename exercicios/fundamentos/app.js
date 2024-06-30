@@ -73,8 +73,8 @@ const lsItems = [
                 deploy: ""
             },
             {
-                id: "M1F-P2-LABEPET",
-                title: "CHECKPET",
+                id: "M1F-P2-SIMULAPET",
+                title: "SIMULAPet",
                 alias: "PET",
                 responsable: "@BotechiaDev",
                 status: 0,
