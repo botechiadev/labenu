@@ -17,3 +17,8 @@ console.log(operacao1);
 /*false, porque 50 não é maior que 90, consequentemente temos true && false,
 que devolve false
 */
+
+console.log(5>20 && 5<2);
+console.log(5==="5")
+console.log(!(20>50))
+console.log(!(20>50 ||50>70))
