@@ -1,5 +1,0 @@
-const variaveis = []
-const praticas = []
-const desafios = []
-const exercicios = []
-const templates = []

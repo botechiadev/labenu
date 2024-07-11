@@ -1,1 +1,0 @@
-const TITULO3 = "LabeCOURSES"
